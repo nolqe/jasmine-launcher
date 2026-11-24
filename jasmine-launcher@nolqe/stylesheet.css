@@ -1,0 +1,269 @@
+/* 色・透明度・角丸・間隔・文字サイズ・ボタン色は設定（prefs）からインラインで上書きされる */
+.jw-column { spacing: 16px; }
+
+.jw-card {
+  padding: 16px 18px;
+  spacing: 12px;
+}
+.jw-row { spacing: 14px; }
+.jw-text { spacing: 2px; }
+
+.jw-title { font-weight: bold; font-size: 1em; }
+.jw-subtitle { font-size: 0.86em; }
+.jw-host-name { font-size: 0.95em; }
+
+.jw-pill {
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-weight: bold;
+}
+.jw-pill:hover { box-shadow: inset 0 0 0 100px rgba(255, 255, 255, 0.12); }
+.jw-pill:active { box-shadow: inset 0 0 0 100px rgba(0, 0, 0, 0.15); }
+
+.jw-entry {
+  border-radius: 999px;
+  border: none;
+  padding: 8px 14px;
+  selected-color: #ffffff;
+  selection-background-color: #3584e4;
+}
+
+.jw-icon-button { border-radius: 999px; padding: 8px; }
+.jw-controls { spacing: 6px; }
+
+.jw-host-list { spacing: 6px; }
+.jw-host-row {
+  border-radius: 14px;
+  padding: 6px 6px 6px 14px;
+  spacing: 10px;
+}
+.jw-host-row .jw-pill { padding: 6px 16px; }
+.jw-login { spacing: 8px; padding-top: 4px; }
+
+/* ダーク */
+.jw-dark { color: #ffffff; }
+.jw-dark .jw-subtitle { color: rgba(255, 255, 255, 0.65); }
+.jw-dark .jw-entry { background-color: rgba(255, 255, 255, 0.10); color: #ffffff; caret-color: #ffffff; }
+.jw-dark .jw-entry:focus { background-color: rgba(255, 255, 255, 0.16); }
+.jw-dark .jw-entry StLabel.hint-text { color: rgba(255, 255, 255, 0.45); }
+.jw-dark .jw-icon-button { color: #ffffff; }
+.jw-dark .jw-icon-button:hover { background-color: rgba(255, 255, 255, 0.12); }
+.jw-dark .jw-icon-button:active { background-color: rgba(255, 255, 255, 0.20); }
+.jw-dark .jw-icon-button.jw-main { background-color: rgba(255, 255, 255, 0.92); color: #1e1e22; }
+.jw-dark .jw-host-row { background-color: rgba(255, 255, 255, 0.06); }
+
+/* ライト */
+.jw-light { color: #1e1e22; }
+.jw-light .jw-subtitle { color: rgba(0, 0, 0, 0.55); }
+.jw-light .jw-entry { background-color: rgba(0, 0, 0, 0.06); color: #1e1e22; caret-color: #1e1e22; }
+.jw-light .jw-entry:focus { background-color: rgba(0, 0, 0, 0.10); }
+.jw-light .jw-entry StLabel.hint-text { color: rgba(0, 0, 0, 0.40); }
+.jw-light .jw-icon-button { color: #1e1e22; }
+.jw-light .jw-icon-button:hover { background-color: rgba(0, 0, 0, 0.08); }
+.jw-light .jw-icon-button:active { background-color: rgba(0, 0, 0, 0.14); }
+.jw-light .jw-icon-button.jw-main { background-color: #1e1e22; color: #ffffff; }
+.jw-light .jw-host-row { background-color: rgba(0, 0, 0, 0.05); }
+
+/* Claude Code の状態ドット */
+.jw-claude-row { padding: 8px 12px; }
+.jw-dot { width: 10px; height: 10px; border-radius: 5px; }
+.jw-dot-working { background-color: #3584e4; }
+.jw-dot-waiting { background-color: #f6d32d; }
+.jw-dot-done { background-color: #33d17a; }
+.jw-dot-idle { background-color: rgba(128, 128, 128, 0.7); }
+.jw-dot-ended { background-color: transparent; border: 2px solid rgba(128, 128, 128, 0.7); width: 6px; height: 6px; }
+
+/* Claude Code: 許可の確認・続きからボタン */
+.jw-row-tight { spacing: 10px; }
+.jw-claude-row { spacing: 8px; }
+.jw-req-body { font-family: monospace; font-size: 0.85em; padding: 6px 8px; border-radius: 8px; }
+.jw-dark .jw-req-body { background-color: rgba(0, 0, 0, 0.25); }
+.jw-light .jw-req-body { background-color: rgba(0, 0, 0, 0.06); }
+.jw-claude-row .jw-pill { padding: 5px 14px; }
+.jw-pill-plain { font-weight: normal; }
+.jw-dark .jw-pill-plain { color: #ffffff; background-color: rgba(255, 255, 255, 0.12); }
+.jw-light .jw-pill-plain { color: #1e1e22; background-color: rgba(0, 0, 0, 0.08); }
+
+/* Claude Code カード（v5: すっきり版） */
+.jw-claude { spacing: 10px; }
+.jw-sess-list { spacing: 2px; }
+.jw-sess { border-radius: 12px; padding: 6px 8px; }
+.jw-sess-inner { spacing: 1px; }
+.jw-sess-line { spacing: 10px; }
+.jw-sess-title { font-size: 0.92em; }
+.jw-sess-time { font-size: 0.78em; }
+.jw-sess-sub { font-size: 0.78em; padding-left: 20px; }
+.jw-sess-ended .jw-sess-title { font-size: 0.86em; }
+.jw-claude-bar { spacing: 6px; }
+.jw-entry-small { padding: 6px 12px; }
+.jw-pill.jw-chip { padding: 6px 12px; font-size: 0.85em; }
+.jw-req { spacing: 6px; padding: 0 4px 4px 24px; }
+.jw-dark .jw-sess:hover { background-color: rgba(255, 255, 255, 0.07); }
+.jw-dark .jw-sess-time, .jw-dark .jw-sess-sub, .jw-dark .jw-sess-resume { color: rgba(255, 255, 255, 0.55); }
+.jw-dark .jw-sess-ended { color: rgba(255, 255, 255, 0.6); }
+.jw-light .jw-sess:hover { background-color: rgba(0, 0, 0, 0.05); }
+.jw-light .jw-sess-time, .jw-light .jw-sess-sub, .jw-light .jw-sess-resume { color: rgba(0, 0, 0, 0.5); }
+.jw-light .jw-sess-ended { color: rgba(0, 0, 0, 0.55); }
+
+/* v6: Claude カード（ミニマル） */
+.jw-claude-head { spacing: 2px; }
+.jw-icon-button.jw-icon-small { padding: 6px; }
+.jw-icon-small StIcon { icon-size: 16px; }
+.jw-dot-ended { background-color: transparent; border: 1.5px solid rgba(128, 128, 128, 0.8); width: 7px; height: 7px; }
+.jw-dark .jw-claude-head .jw-icon-button { color: rgba(255, 255, 255, 0.7); }
+.jw-light .jw-claude-head .jw-icon-button { color: rgba(0, 0, 0, 0.6); }
+
+/* ジャケット（正方形に切り抜き） */
+.jw-art { border-radius: 10px; }
+.jw-dark .jw-art { background-color: rgba(255, 255, 255, 0.06); }
+.jw-light .jw-art { background-color: rgba(0, 0, 0, 0.05); }
+
+/* ランチャー（ポップアップとカード共通） */
+.jw-launcher { padding: 12px; spacing: 8px; }
+.jw-launcher-entry { padding: 12px 18px; font-size: 1.15em; }
+.jw-results { spacing: 2px; }
+.jw-result { border-radius: 12px; padding: 6px 10px; }
+.jw-result-box { spacing: 12px; }
+.jw-result-title { font-size: 0.95em; }
+.jw-result-sub { font-size: 0.78em; }
+.jw-launch-card { spacing: 8px; }
+.jw-dark .jw-result:selected, .jw-dark .jw-result:hover { background-color: rgba(255, 255, 255, 0.10); }
+.jw-light .jw-result:selected, .jw-light .jw-result:hover { background-color: rgba(0, 0, 0, 0.07); }
+.jw-dark .jw-result-sub { color: rgba(255, 255, 255, 0.55); }
+.jw-light .jw-result-sub { color: rgba(0, 0, 0, 0.5); }
+.jw-dark .jw-result { color: #ffffff; }
+.jw-light .jw-result { color: #1e1e22; }
+
+/* v7: AI カード（送り先の切り替え・Muse の点） */
+.jw-seg { spacing: 2px; border-radius: 999px; padding: 2px; }
+.jw-seg-btn { border-radius: 999px; padding: 4px 12px; font-size: 0.82em; }
+.jw-dark .jw-seg { background-color: rgba(255, 255, 255, 0.08); }
+.jw-dark .jw-seg-btn { color: rgba(255, 255, 255, 0.6); }
+.jw-dark .jw-seg-btn:checked { background-color: rgba(255, 255, 255, 0.92); color: #1e1e22; }
+.jw-light .jw-seg { background-color: rgba(0, 0, 0, 0.06); }
+.jw-light .jw-seg-btn { color: rgba(0, 0, 0, 0.55); }
+.jw-light .jw-seg-btn:checked { background-color: #1e1e22; color: #ffffff; }
+.jw-dot-muse { background-color: #9141ac; border-radius: 3px; }
+
+/* v8: Parsec を小さく */
+.jw-head-status { font-size: 0.78em; padding-left: 8px; }
+.jw-dark .jw-head-status { color: rgba(255, 255, 255, 0.55); }
+.jw-light .jw-head-status { color: rgba(0, 0, 0, 0.5); }
+.jw-host-row.jw-host-compact { padding: 4px 4px 4px 12px; border-radius: 12px; }
+.jw-host-row.jw-host-compact .jw-pill { padding: 4px 12px; }
+
+/* v9: Web アプリ（アイコンを並べる） */
+.jw-webgrid { padding: 2px 0; }
+.jw-webapp { border-radius: 14px; padding: 6px 2px 2px 2px; width: 64px; }
+.jw-webapp-box { spacing: 3px; }
+.jw-webapp-name { font-size: 0.72em; max-width: 60px; }
+.jw-webapp-dot { width: 4px; height: 4px; border-radius: 2px; }
+.jw-dark .jw-webapp:hover { background-color: rgba(255, 255, 255, 0.08); }
+.jw-dark .jw-webapp-dot { background-color: rgba(255, 255, 255, 0.85); }
+.jw-light .jw-webapp:hover { background-color: rgba(0, 0, 0, 0.06); }
+.jw-light .jw-webapp-dot { background-color: rgba(0, 0, 0, 0.7); }
+
+/* v12: システム（リングのメーター） */
+.jw-ring-row { spacing: 4px; }
+.jw-ring-box { spacing: 4px; }
+.jw-ring-value { font-size: 0.8em; font-weight: bold; }
+.jw-ring-name { font-size: 0.72em; }
+.jw-sys-foot { font-size: 0.75em; }
+.jw-dark .jw-ring-name, .jw-dark .jw-sys-foot { color: rgba(255, 255, 255, 0.55); }
+.jw-light .jw-ring-name, .jw-light .jw-sys-foot { color: rgba(0, 0, 0, 0.5); }
+
+/* v13: Web パネル（ウィンドウが重なる領域） */
+.jw-panel-card { padding-bottom: 8px; }
+.jw-panel-slot { border-radius: 18px; }
+.jw-dark .jw-panel-slot { background-color: rgba(255, 255, 255, 0.04); }
+.jw-light .jw-panel-slot { background-color: rgba(0, 0, 0, 0.03); }
+
+/* Modernized entry, launcher & music card */
+/* 入力欄: GNOME 標準の太いフォーカス枠を消し、明るさの変化だけで示す */
+.jw-entry, .jw-entry:hover, .jw-entry:focus { border-width: 0; box-shadow: none; padding: 9px 14px; }
+.jw-entry-small, .jw-entry-small:focus { padding: 7px 12px; }
+.jw-dark .jw-entry:focus { box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18); }
+.jw-light .jw-entry:focus { box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15); }
+.jw-entry-icon { icon-size: 16px; padding-right: 8px; }
+.jw-dark .jw-entry-icon { color: rgba(255, 255, 255, 0.5); }
+.jw-light .jw-entry-icon { color: rgba(0, 0, 0, 0.45); }
+
+/* ランチャーのポップアップ */
+.jw-launcher { padding: 10px; spacing: 6px; }
+.jw-launcher-entry, .jw-launcher-entry:focus { padding: 12px 18px; font-size: 1.1em; }
+.jw-dark .jw-launcher-entry, .jw-dark .jw-launcher-entry:focus { background-color: rgba(255, 255, 255, 0.07); box-shadow: none; }
+.jw-light .jw-launcher-entry, .jw-light .jw-launcher-entry:focus { background-color: rgba(0, 0, 0, 0.05); box-shadow: none; }
+.jw-result { border-radius: 14px; padding: 8px 12px; }
+.jw-result-title { font-size: 0.95em; font-weight: 600; }
+.jw-launcher-footer { font-size: 0.72em; padding: 2px 8px 0 8px; }
+.jw-dark .jw-launcher-footer { color: rgba(255, 255, 255, 0.4); }
+.jw-light .jw-launcher-footer { color: rgba(0, 0, 0, 0.4); }
+
+/* Music card: single row + progress bar */
+.jw-music { spacing: 10px; padding: 14px 16px; }
+.jw-music-row { spacing: 12px; }
+.jw-controls { spacing: 2px; }
+.jw-icon-button.jw-main { padding: 9px; }
+.jw-progress { height: 3px; border-radius: 2px; }
+.jw-progress-fill { height: 3px; border-radius: 2px; }
+.jw-dark .jw-progress { background-color: rgba(255, 255, 255, 0.12); }
+.jw-dark .jw-progress-fill { background-color: rgba(255, 255, 255, 0.85); }
+.jw-light .jw-progress { background-color: rgba(0, 0, 0, 0.10); }
+.jw-light .jw-progress-fill { background-color: rgba(0, 0, 0, 0.75); }
+
+/* v15: 見出しの文言をなくした分の調整 */
+.jw-claude-bar { spacing: 6px; }
+.jw-panel-head { height: 14px; padding: 0 0 4px 0; }
+.jw-panel-card { padding-top: 8px; }
+.jw-grip { width: 36px; height: 4px; border-radius: 2px; }
+.jw-dark .jw-grip { background-color: rgba(255, 255, 255, 0.25); }
+.jw-light .jw-grip { background-color: rgba(0, 0, 0, 0.2); }
+.jw-dark .jw-webapp-add { color: rgba(255, 255, 255, 0.5); }
+.jw-light .jw-webapp-add { color: rgba(0, 0, 0, 0.45); }
+
+/* v16: Web パネルは余白なし（上のつかみバーだけ） */
+.jw-panel-card { padding: 0; spacing: 0; }
+.jw-panel-head { height: 16px; padding: 0; }
+.jw-panel-slot, .jw-dark .jw-panel-slot, .jw-light .jw-panel-slot { background-color: transparent; border-radius: 0; }
+
+/* v17: システムの下の行（線画アイコン） */
+.jw-sys-foot { spacing: 14px; }
+.jw-sys-item { spacing: 4px; font-size: 0.82em; }
+.jw-dark .jw-sys-item { color: rgba(255, 255, 255, 0.6); }
+.jw-light .jw-sys-item { color: rgba(0, 0, 0, 0.55); }
+
+/* v19: Paseo カード */
+.jw-dot-error { background-color: #e01b24; }
+.jw-provider { font-size: 0.68em; font-weight: 700; padding: 1px 6px; border-radius: 999px; }
+.jw-dark .jw-provider { background-color: rgba(255, 255, 255, 0.10); color: rgba(255, 255, 255, 0.7); }
+.jw-light .jw-provider { background-color: rgba(0, 0, 0, 0.07); color: rgba(0, 0, 0, 0.6); }
+
+/* v25: Paseo カードの ☰ を一覧の右上に */
+.jw-claude-row { spacing: 4px; }
+.jw-claude-head .jw-pill.jw-chip { padding: 3px 10px; margin-right: 2px; }
+
+/* v42: メモリ整理ボタン（小さな正方形のカード。アイコン 1 つだけ） */
+.jw-card.jw-mem { padding: 0; }
+.jw-mem-text { font-size: 0.7em; font-weight: bold; }
+/* v45: たたんだ Web パネル（つかみバーだけ。押すと開く） */
+.jw-panel-closed .jw-panel-head { height: 32px; padding: 0 16px; }
+/* v46: フローティングキーボード（osk.js） */
+.jw-osk { spacing: 6px; }
+.jw-osk-rows { spacing: 6px; }
+.jw-osk-row { spacing: 6px; }
+.jw-osk-strip { spacing: 4px; }
+.jw-osk-key { border-radius: 10px; font-size: 1.1em; padding: 0 10px; transition-duration: 60ms; }
+.jw-osk-strip .jw-osk-key { font-size: 0.85em; border-radius: 8px; }
+.jw-osk-mod { font-size: 0.95em; }
+.jw-osk.jw-dark { color: #ffffff; }
+.jw-osk.jw-light { color: #1e1e22; }
+.jw-osk.jw-dark .jw-osk-key { background-color: rgba(255, 255, 255, 0.10); }
+.jw-osk.jw-dark .jw-osk-mod { background-color: rgba(255, 255, 255, 0.05); }
+.jw-osk.jw-dark .jw-osk-key:active { background-color: rgba(255, 255, 255, 0.28); }
+.jw-osk.jw-light .jw-osk-key { background-color: rgba(0, 0, 0, 0.07); }
+.jw-osk.jw-light .jw-osk-mod { background-color: rgba(0, 0, 0, 0.035); }
+.jw-osk.jw-light .jw-osk-key:active { background-color: rgba(0, 0, 0, 0.18); }
+.jw-osk-handle { min-width: 40px; }
+.jw-osk-bubble.jw-dark { color: #ffffff; }
+.jw-osk-bubble.jw-light { color: #1e1e22; }

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.jasmine-launcher" path="/org/gnome/shell/extensions/jasmine-launcher/">
+    <!-- Layout -->
+    <key name="position" type="s"><default>'top-right'</default>
+      <summary>Default corner (top-right / top-left / bottom-right / bottom-left)</summary></key>
+    <key name="card-positions" type="s"><default>'{}'</default><summary>Per-card positions JSON</summary></key>
+    <key name="allow-drag" type="b"><default>true</default><summary>Allow dragging cards</summary></key>
+    <key name="width" type="i"><default>340</default><summary>Card width (px)</summary></key>
+    <key name="margin" type="i"><default>32</default><summary>Screen margin (px)</summary></key>
+    <key name="spacing" type="i"><default>16</default><summary>Card spacing (px)</summary></key>
+
+    <!-- Cards & visibility -->
+    <key name="order" type="as"><default>['search', 'music', 'system', 'memory', 'webpanel', 'parsec', 'claude']</default><summary>Card order</summary></key>
+    <key name="visible" type="b"><default>true</default><summary>Show desktop cards</summary></key>
+    <key name="show-search" type="b"><default>true</default><summary>Show launcher card</summary></key>
+    <key name="show-music" type="b"><default>true</default><summary>Show music card</summary></key>
+    <key name="show-system" type="b"><default>true</default><summary>Show system monitor card</summary></key>
+    <key name="show-memory" type="b"><default>true</default><summary>Show Clean RAM button</summary></key>
+    <key name="show-webpanel" type="b"><default>true</default><summary>Show web panel card</summary></key>
+    <key name="show-parsec" type="b"><default>false</default><summary>Show Parsec card</summary></key>
+    <key name="show-claude" type="b"><default>false</default><summary>Show Paseo card</summary></key>
+
+    <!-- Appearance -->
+    <key name="language" type="s"><default>'auto'</default><summary>UI language (auto / en / ja)</summary></key>
+    <key name="theme" type="s"><default>'system'</default><summary>Theme (dark / light / system)</summary></key>
+    <key name="opacity" type="d"><default>0.85</default><summary>Card opacity</summary></key>
+    <key name="corner-radius" type="i"><default>24</default><summary>Card corner radius (px)</summary></key>
+    <key name="accent" type="s"><default>'#3584e4'</default><summary>Accent color hex</summary></key>
+    <key name="accent-system" type="b"><default>true</default><summary>Follow GNOME accent color</summary></key>
+    <key name="card-bg" type="s"><default>''</default><summary>Custom card background hex</summary></key>
+    <key name="card-fg" type="s"><default>''</default><summary>Custom card text hex</summary></key>
+    <key name="font-scale" type="d"><default>1.0</default><summary>Text scale multiplier</summary></key>
+    <key name="shadow" type="b"><default>true</default><summary>Card drop shadow</summary></key>
+
+    <!-- Launcher -->
+    <key name="launcher-shortcut" type="as"><default>['&lt;Super&gt;f']</default><summary>Launcher popup shortcut</summary></key>
+    <key name="launcher-width" type="i"><default>600</default><summary>Launcher popup width (px)</summary></key>
+    <key name="launcher-top" type="i"><default>22</default><summary>Launcher popup vertical offset (%)</summary></key>
+    <key name="search-engine" type="s"><default>'google'</default><summary>Web search engine</summary></key>
+    <key name="search-custom-url" type="s"><default>'https://www.google.com/search?q=%s'</default><summary>Custom search URL template</summary></key>
+    <key name="quick-send-app" type="s"><default>''</default><summary>Optional .desktop ID for @ quick-send</summary></key>
+
+    <!-- Web Panel -->
+    <key name="webpanel-open" type="b"><default>true</default><summary>Web panel expanded state</summary></key>
+    <key name="webpanel-count" type="i"><default>1</default><summary>Number of web panel panes (1-3)</summary></key>
+    <key name="webpanel-width" type="i"><default>420</default><summary>Web panel pane width (px)</summary></key>
+    <key name="webpanel-height" type="i"><default>560</default><summary>Web panel pane height (px)</summary></key>
+
+    <!-- Music -->
+    <key name="music-any-player" type="b"><default>true</default><summary>Show all MPRIS players</summary></key>
+    <key name="music-art-size" type="i"><default>64</default><summary>Album artwork size (px)</summary></key>
+    <key name="music-app" type="s"><default>''</default><summary>Optional .desktop ID to open on click</summary></key>
+
+    <!-- Parsec -->
+    <key name="parsec-hidden" type="as"><default>[]</default><summary>Hidden Parsec host names</summary></key>
+    <key name="parsec-max-rows" type="i"><default>5</default><summary>Parsec rows before scrolling</summary></key>
+
+    <!-- Paseo / Claude Code -->
+    <key name="paseo-max" type="i"><default>6</default><summary>Max Paseo sessions displayed</summary></key>
+    <key name="claude-dir" type="s"><default>''</default><summary>Default working directory for AI sessions</summary></key>
+
+    <!-- System & Clean RAM -->
+    <key name="system-interval" type="i"><default>2</default><summary>System stats update interval (seconds)</summary></key>
+    <key name="memory-keep" type="as"><default>['org.gnome.Ptyxis.desktop', 'org.gnome.Console.desktop', 'org.gnome.Terminal.desktop']</default><summary>Apps to keep when cleaning RAM</summary></key>
+
+    <!-- Controls, Overlay & Tablet Mode -->
+    <key name="peek-shortcut" type="as"><default>['&lt;Super&gt;w']</default><summary>Bring-to-front overlay shortcut</summary></key>
+    <key name="swipe-minimize" type="b"><default>true</default><summary>Three-finger swipe down to minimize</summary></key>
+    <key name="show-tablet-button" type="b"><default>true</default><summary>Show tablet mode button in top bar</summary></key>
+    <key name="tablet-shortcut" type="as"><default>[]</default><summary>Tablet mode toggle shortcut</summary></key>
+    <key name="tablet-on" type="b"><default>false</default><summary>Tablet mode active state</summary></key>
+    <key name="tablet-saved" type="s"><default>''</default><summary>Saved settings before tablet mode</summary></key>
+    <key name="osk-enabled" type="b"><default>true</default><summary>Use floating keyboard in tablet mode</summary></key>
+    <key name="osk-size" type="i"><default>1</default><summary>Floating keyboard size preset (0-3)</summary></key>
+    <key name="osk-pos" type="s"><default>''</default><summary>Floating keyboard position JSON</summary></key>
+  </schema>
+</schemalist>

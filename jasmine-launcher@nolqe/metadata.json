@@ -1,0 +1,11 @@
+{
+  "uuid": "jasmine-launcher@nolqe",
+  "url": "https://github.com/nolqe/jasmine-launcher",
+  "name": "Jasmine Launcher",
+  "description": "Minimal desktop hub & launcher for GNOME Shell: customizable desktop cards (Launcher, Music, System, Clean RAM, Web Panel, Parsec, Paseo), Super+F popup launcher, overlay mode, 3-finger minimize gesture, tablet auto-rotate mode, and floating touch keyboard.",
+  "shell-version": [
+    "51"
+  ],
+  "version": 1,
+  "settings-schema": "org.gnome.shell.extensions.jasmine-launcher"
+}
