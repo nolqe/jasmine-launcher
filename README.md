@@ -4,6 +4,8 @@ A minimal desktop hub and launcher extension for **GNOME Shell 51 (Wayland)**.
 
 Combines draggable desktop cards, a `Super+F` popup launcher, a multi-pane embedded Web Panel, a `Super+W` bring-to-front overlay, a 3-finger minimize touchpad gesture, a manual tablet mode with auto-rotation, and a floating touch keyboard — built exclusively with native GNOME technologies (**GJS, St/Clutter, GTK4/libadwaita, and WebKitGTK 6.0**).
 
+![Jasmine Launcher in tablet mode: desktop cards, Super+F launcher and floating keyboard (Web Panel content blurred)](screenshot.jpg)
+
 ## Features
 
 - **Popup & Card Launcher (`Super+F`)**: Search apps, calculate math expressions (Enter copies to clipboard), trigger power actions (Lock / Suspend / Log out / Restart / Power off), search the web (`? query`) in your default browser, start AI sessions (`> prompt`, Paseo / Claude Code), or quick-send text via clipboard (`@ text` to any configured `.desktop` app).
